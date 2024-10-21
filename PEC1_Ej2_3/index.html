@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marta Rios Garrido">
+    <meta name="description" content="Formulario">
+    <title>Cartelera</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="movie-container">
+            <label for="currency">Selecciona tu moneda:</label>
+                <select id="currency">
+                        <option value="USD">USD - Dólar Estadounidense</option>
+                        <option value="EUR" selected>EUR - Euro</option>
+                        <option value="JPY">JPY - Yen Japonés</option>
+                        <option value="GBP">GBP - Libra Esterlina</option>
+                        <option value="AUD">AUD - Dólar Australiano</option>
+                        <option value="CAD">CAD - Dólar Canadiense</option>
+                        <option value="CHF">CHF - Franco Suizo</option>
+                        <option value="CNY">CNY - Yuan Chino</option>
+                        <option value="SEK">SEK - Corona Sueca</option>
+                        <option value="NZD">NZD - Dólar Neozelandés</option>
+                        <option value="MXN">MXN - Peso Mexicano</option>
+                        <option value="SGD">SGD - Dólar de Singapur</option>
+                        <option value="HKD">HKD - Dólar de Hong Kong</option>
+                        <option value="NOK">NOK - Corona Noruega</option>
+                        <option value="KRW">KRW - Won Surcoreano</option>
+                        <option value="TRY">TRY - Lira Turca</option>
+                        <option value="RUB">RUB - Rublo Ruso</option>
+                        <option value="INR">INR - Rupia India</option>
+                        <option value="BRL">BRL - Real Brasileño</option>
+                        <option value="ZAR">ZAR - Rand Sudafricano</option>
+                        <option value="ARS">ARS - Peso Argentino</option>
+                        <option value="PLN">PLN - Zloty Polaco</option>
+                        <option value="DKK">DKK - Corona Danesa</option>
+                        <option value="THB">THB - Baht Tailandés</option>
+                        <option value="IDR">IDR - Rupia Indonesia</option>
+                        <option value="MYR">MYR - Ringgit Malayo</option>
+                        <option value="PHP">PHP - Peso Filipino</option>
+                        <option value="CZK">CZK - Corona Checa</option>
+                        <option value="HUF">HUF - Forinto Húngaro</option>
+                        <option value="ILS">ILS - Shequel Israelí</option>
+                        <option value="CLP">CLP - Peso Chileno</option>
+                        <option value="COP">COP - Peso Colombiano</option>
+                        <option value="PEN">PEN - Sol Peruano</option>
+                        <option value="VND">VND - Dong Vietnamita</option>
+                </select>
+        </div>
+
+
+        <div class="movie-container">
+            <label for="movie">Selecciona la película:</label>
+            <select name="movieChoose" id="movie">
+                <option value="12">El Joker 2 (12€)</option>
+                <option value="5">Dirty Dancing (5€)</option>
+                <option value="8">Interestellar (8€)</option>
+                <option value="3">El Rey León (3€)</option>
+            </select>
+        </div>
+
+        <div class="legend">
+            <p><span class="seat libre"></span>Libre</p>
+            <p><span class="seat seleccionado"></span>Seleccionado</p>
+            <p><span class="seat ocupado"></span>Ocupado</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr class="screan">
+                    <th colspan="10"></th>
+                </tr>
+            </thead>
+
+            <tbody class="seats-container">
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                    <td></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="seats">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="occupied"></td>
+                    <td class="occupied"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div class="FinalText">Has seleccionado <span id="countSeats" class="totalSeats">0</span> asientos por un precio de <span id="finalPrice" class="totalPrice">0€</span></div>
+    
+    </div>
+</body>

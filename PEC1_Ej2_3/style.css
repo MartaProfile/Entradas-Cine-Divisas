@@ -1,0 +1,168 @@
+
+/* Body */
+
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.container {
+    text-align: left;
+}
+
+
+
+/* Desplegable de selección de películas/monedas */
+
+.movie-container select {
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Leyenda asientos */
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+
+.legend p {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+
+.legend .seat {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+}
+
+
+.legend .seat.libre {
+    background-color: rgba(214, 209, 209, 0.5);
+}
+
+
+.legend .seat.ocupado {
+    background-color: #000;
+}
+
+
+.legend .seat.seleccionado {
+    background-color: #4caf50;
+}
+
+
+
+/* Tabla para la pantalla y asientos */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    text-align: center;    
+    border-collapse: separate;
+    border-spacing: 0.7rem 0.7rem;
+}
+
+
+td {
+    padding: 0.3rem;
+    text-align: center;
+}
+
+
+
+/* Pantalla */
+
+.screan th {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: -10px 10px 30px rgb(236, 234, 234);
+    width: 100%;
+    margin-bottom: 2rem;
+    transform: scaleX(1.2);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+
+
+/* Asientos */
+
+.seats td {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: rgba(214, 209, 209, 0.5);
+    margin: 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.seats td:not(.occupied):hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+.seats td:nth-child(3), 
+.seats td:nth-child(8) {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+
+.seats td.occupied {
+    background-color: #000;
+}
+
+
+.seats td.selected {
+    background-color: #4caf50;
+}
+
+
+
+/* Texto final */
+
+.FinalText {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.totalSeats {
+    color: #4caf50;
+    font-weight: bolder;
+}
+
+
+.totalPrice {
+    color: #4caf50;
+    font-weight: bolder;
+}
+
